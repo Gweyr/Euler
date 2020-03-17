@@ -38,8 +38,6 @@ bool is_palindromic(int number = 0)
     return true;
 }
 
-// 100 * 100 [10.000] < X > 999 * 999 [998.001]
-
 int main(int argc, char *argv[])
 {
     int MAX = 0;
