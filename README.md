@@ -1,11 +1,9 @@
-# Project Euler Solutions
+#<p style="text-align: center;">💡 Project Euler Solutions</p>
 
-Coleção de soluções desenvolvidas em C++ para o projeto. @see <https://projecteuler.net>
+<p style="text-align: center;"><img src="Leonhard_Euler_2.jpg" width="200"></p>
 
-## About
+<p><span>🔦</span> Collection of solutions developed in <span style="font-weight: bold">C++</span> to Project Euler.</p>
 
-Repositório de resoluções para os problemas apresentados no Projeto Euler.
+## <span>💎</span> Official Website
 
-## Melhorias
-
-Melhorar o código para o problema #4
+<span>🔦</span> <https://projecteuler.net>

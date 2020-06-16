@@ -48,4 +48,6 @@ int main(int argc, char *argv[])
     }
 
     std::cout << MAX << std::endl;
+
+    return 0;
 }

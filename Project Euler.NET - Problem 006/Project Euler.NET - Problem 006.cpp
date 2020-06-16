@@ -13,4 +13,6 @@ int main(int argc, char *argv[])
         SUM_OF_SQUARE += i * i;
 
     std::cout << SUM * SUM - SUM_OF_SQUARE << std::endl;
+
+    return 0;
 }

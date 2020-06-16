@@ -45,4 +45,6 @@ int main(int argc, char *argv[])
     }
 
     std::cout << MIN << std::endl;
+
+    return 0;
 }

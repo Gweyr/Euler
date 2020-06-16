@@ -1,28 +1,9 @@
 #include <iostream>
 #include <cmath>
 
-/**
- * Retorna a potência de 10 menor ou igual (ordem de magnitude decimal) ao número informado por parâmetro.
- */
-int order_of_magnitude(int number)
-{
-    return number < 10 ? 1 : 10 * order_of_magnitude(number / 10);
-}
-
-/**
- * Retorna o número algarismos de um dado número, aceita apenas números inteiros
- **/
-int number_length(int number)
-{
-    return log10(order_of_magnitude(number)) + 1;
-}
-
-/**
- * Retorna uma flag indicando se um determinado número natural é palíndromo
- **/
 bool is_palindromic(int number = 0)
 {
-    int x[number_length(number)] = {0}, MAX_SIZE = sizeof(x) / sizeof(int);
+    int x[(int)log10(number) + 1] = {0}, MAX_SIZE = sizeof(x) / sizeof(int);
 
     for (int i = 0; i < MAX_SIZE; i++)
     {
@@ -54,4 +35,6 @@ int main(int argc, char *argv[])
     }
 
     std::cout << MAX << std::endl;
+
+    return 0;
 }
