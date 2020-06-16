@@ -1,4 +1,4 @@
-#<p style="text-align: center;">💡 Project Euler Solutions</p>
+# <p style="text-align: center;">💡 Project Euler Solutions</p>
 
 <p style="text-align: center;"><img src="Leonhard_Euler_2.jpg" width="200"></p>
 
