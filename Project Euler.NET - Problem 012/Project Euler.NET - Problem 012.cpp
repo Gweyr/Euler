@@ -1,6 +1,9 @@
 #include <iostream>
+#include <cmath>
 
 const int LIMIT = 500;
+
+const std::string WHITESPACE = "\x20";
 
 unsigned long long int triangle_number(int N)
 {
@@ -9,17 +12,21 @@ unsigned long long int triangle_number(int N)
 
 int Div(int n)
 {
-    int NUMBER = 0;
+    // We start the counter including the value 1 and the n itself.
 
-    for (int i = 1; i < n; i++)
+    int COUNTER = 2;
+
+    for (int i = 2; i < sqrt(n) + 1; i++)
     {
         if (n % i == 0)
         {
-            NUMBER++;
+            // At that moment, we add one to the counter if i is the root, otherwise we add 2, due to the reciprocal of i.
+
+            COUNTER += (n / i == i) ? 1 : 2;
         }
     }
 
-    return NUMBER;
+    return COUNTER;
 }
 
 int main(int argc, char *argv[])
@@ -36,7 +43,7 @@ int main(int argc, char *argv[])
         {
             __MAX = __DIVISORS;
 
-            std::cout << i << " " << __TRIANGLE_NUMBER << " " << __DIVISORS << std::endl;
+            std::cout << i << WHITESPACE << __TRIANGLE_NUMBER << WHITESPACE << __DIVISORS << std::endl;
         }
 
         if (__DIVISORS > LIMIT)
